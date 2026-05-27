@@ -1,0 +1,20 @@
+📸 PASTA DE FOTOS
+==================
+
+Coloque aqui as fotos que você quiser usar no site.
+
+Sugestões de nomes (são os que já estão "comentados" no index.html):
+
+  historia-1.jpg   → foto vertical da seção "Nossa História"
+  historia-2.jpg   → foto horizontal da seção "Nossa História"
+
+Como usar uma foto:
+1) Salve o arquivo da foto nesta pasta (images/).
+2) Abra o index.html e procure pela seção "NOSSA HISTÓRIA".
+3) Você verá linhas como esta, "comentadas":
+       <!-- <img src="images/historia-1.jpg" alt="Natã e Emily"> -->
+   Apague o "<!--" do início e o "-->" do final para ativar a foto,
+   e remova o <span class="ph__hint">...</span> logo abaixo.
+
+Dica: fotos na horizontal ficam ótimas com ~1600px de largura.
+Você também pode me mandar as fotos que eu encaixo tudo pra você. 💚
