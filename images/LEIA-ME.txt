@@ -1,4 +1,4 @@
-📸 PASTA DE FOTOS
+PASTA DE FOTOS
 ==================
 
 Coloque aqui as fotos que você quiser usar no site.
@@ -17,4 +17,4 @@ Como usar uma foto:
    e remova o <span class="ph__hint">...</span> logo abaixo.
 
 Dica: fotos na horizontal ficam ótimas com ~1600px de largura.
-Você também pode me mandar as fotos que eu encaixo tudo pra você. 💚
+Você também pode me mandar as fotos que eu encaixo tudo pra você.

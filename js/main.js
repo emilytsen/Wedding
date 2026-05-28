@@ -48,7 +48,7 @@
       if (diff <= 0) {
         elDias.textContent = '00'; elHoras.textContent = '00';
         elMin.textContent = '00'; elSeg.textContent = '00';
-        if (msg) msg.textContent = 'Hoje é o grande dia! 💍';
+        if (msg) msg.textContent = 'Hoje é o grande dia!';
         clearInterval(timer);
         return;
       }
@@ -65,7 +65,8 @@
   /* ---------- REVEAL ao rolar ---------- */
   var revealEls = document.querySelectorAll(
     '.section__head, .story__text, .story__photos, .timeline__item, .dresscode, ' +
-    '.venue__info, .venue__map, .gift-card, .rsvp__form, .rsvp__or, .countdown__inner'
+    '.venue__photo, .venue__info, .venue__map, .gift-card, ' +
+    '.moment__quote, .rsvp__convite, .rsvp__form, .rsvp__or, .countdown__inner'
   );
   revealEls.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -91,7 +92,7 @@
       var feedback = document.getElementById('pixFeedback');
       var done = function () {
         copyBtn.textContent = 'Copiado!';
-        if (feedback) feedback.textContent = 'Chave copiada com sucesso 💚';
+        if (feedback) feedback.textContent = 'Chave copiada com sucesso';
         setTimeout(function () { copyBtn.textContent = 'Copiar'; }, 2200);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -112,7 +113,7 @@
       // Só intercepta se o Formspree já estiver configurado (action sem "SEU_ID").
       if (form.action.indexOf('SEU_ID') !== -1) {
         e.preventDefault();
-        showFeedback('⚠️ O formulário ainda não foi configurado. Use o WhatsApp por enquanto.', 'is-err');
+        showFeedback('O formulário ainda não foi configurado. Use o WhatsApp por enquanto.', 'is-err');
         return;
       }
       e.preventDefault();
@@ -127,7 +128,7 @@
       }).then(function (res) {
         if (res.ok) {
           form.reset();
-          showFeedback('Presença confirmada! Obrigado 💍 Mal podemos esperar!', 'is-ok');
+          showFeedback('Presença confirmada! Mal podemos esperar!', 'is-ok');
         } else {
           showFeedback('Ops, algo deu errado. Tente novamente ou use o WhatsApp.', 'is-err');
         }

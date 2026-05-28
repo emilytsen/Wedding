@@ -1,10 +1,10 @@
-# 💍 Natã & Emily — 14.11.2026
+# Natã & Emily — 14.11.2026
 
 Site do casamento de **Natã & Emily** · Sítio São Fernando, Vera Cruz - SP.
 Tema **tropical & romântico**. Site estático (HTML, CSS e JavaScript), sem
 necessidade de build.
 
-## 🌐 Ver o site no ar (GitHub Pages)
+## Ver o site no ar (GitHub Pages)
 
 Para publicar gratuitamente em `https://emilytsen.github.io/Wedding/`:
 
@@ -13,7 +13,7 @@ Para publicar gratuitamente em `https://emilytsen.github.io/Wedding/`:
 3. Pronto! A cada `git push` na branch `main`, o site é publicado automaticamente
    (veja o progresso na aba **Actions**).
 
-## 🗂️ Estrutura
+## Estrutura
 
 ```
 index.html              página principal
@@ -23,7 +23,7 @@ images/                 suas fotos (veja images/LEIA-ME.txt)
 .github/workflows/      deploy automático no GitHub Pages
 ```
 
-## ✏️ O que ainda falta personalizar
+## O que ainda falta personalizar
 
 Procure por `TODO Emily` dentro do `index.html` — cada um marca um ponto a ajustar:
 
@@ -37,7 +37,7 @@ Procure por `TODO Emily` dentro do `index.html` — cada um marca um ponto a aju
   - **WhatsApp**: troque `55SEUNUMERO` no botão do WhatsApp pelo número real
     (formato: 55 + DDD + número).
 
-## 🛠️ Rodar localmente
+## Rodar localmente
 
 Abra o `index.html` no navegador, **ou** rode um servidor simples:
 
