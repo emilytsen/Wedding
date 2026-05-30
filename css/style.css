@@ -197,15 +197,22 @@ a { color: inherit; }
 }
 
 .hero__names {
-  font-size: clamp(3.8rem, 14vw, 8rem);
-  font-weight: 400; line-height: .95;
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.2rem, 9.5vw, 6.4rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: 1.05;
+  white-space: nowrap;        /* mantém "Natã & Emily" em uma linha só */
   color: var(--cream-soft);
-  letter-spacing: .015em;
   text-shadow: 0 2px 30px rgba(0,0,0,.5);
 }
 .hero__names span {
-  font-style: italic; font-weight: 300;
-  opacity: .9; display: inline-block; padding: 0 .1em;
+  font-family: 'Cinzel', serif;  /* mesmo família dos nomes, sem itálico */
+  font-weight: 400;
+  font-size: .82em;
+  letter-spacing: 0;
+  padding: 0 .15em;
   color: var(--gold-soft);
 }
 
@@ -428,32 +435,38 @@ a { color: inherit; }
 .gift-card__hint { font-size: .78rem !important; opacity: .65 !important; margin: .6rem 0 0 !important; }
 
 /* =========================================================
-   RSVP — convite + formulário
+   INFORMAÇÕES & DÚVIDAS — convite + FAQ
    ========================================================= */
-.rsvp { position: relative; overflow: hidden; }
-.rsvp__convite {
+.info { position: relative; overflow: hidden; }
+.info__convite {
   display: block; margin: 0 auto 2rem;
   max-width: 760px; width: 94%;
   filter: drop-shadow(0 26px 38px rgba(58,22,28,.22));
 }
 
-.rsvp__form { max-width: 520px; margin: 0 auto; }
-.field { margin-bottom: 1.2rem; }
-.field label { display: block; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--olive); margin-bottom: .45rem; }
-.field input, .field select, .field textarea {
-  width: 100%; font-family: var(--font-body); font-size: 1rem; font-weight: 300;
-  padding: .85rem 1rem; border: 1px solid rgba(110,35,51,.25); border-radius: 6px;
-  background: var(--cream-soft); color: var(--ink);
-  transition: border-color .3s var(--ease);
+.faq { max-width: 720px; margin: 0 auto; }
+.faq__item {
+  border-top: 1px solid rgba(125, 47, 48, .22);
+  padding: 1.8rem 0;
 }
-.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--wine); }
-.field textarea { resize: vertical; }
-.rsvp__feedback { text-align: center; margin-top: 1rem; font-family: var(--font-display); font-style: italic; font-size: 1.2rem; min-height: 1.2em; }
-.rsvp__feedback.is-ok  { color: var(--olive-deep); }
-.rsvp__feedback.is-err { color: var(--wine); }
-
-.rsvp__or { text-align: center; margin-top: 2rem; }
-.rsvp__or span { display: block; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--olive); margin-bottom: .9rem; }
+.faq__item:last-child { border-bottom: 1px solid rgba(125, 47, 48, .22); }
+.faq__q {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.75rem);
+  font-style: italic;
+  color: var(--wine);
+  margin-bottom: .8rem;
+  line-height: 1.2;
+}
+.faq__a p {
+  margin-bottom: .8rem;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+.faq__a p:last-child { margin-bottom: 0; }
+.faq__a em { font-style: italic; color: var(--wine); font-weight: 400; }
+.faq__a strong { font-weight: 500; color: var(--wine-deep); }
+.faq__a .btn { margin-top: .9rem; }
 
 /* =========================================================
    FOOTER

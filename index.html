@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -36,7 +36,7 @@
       <a href="#grande-dia">O Grande Dia</a>
       <a href="#local">Local</a>
       <a href="#presentes">Presentes</a>
-      <a href="#rsvp" class="nav__cta">Confirmar Presença</a>
+      <a href="#info" class="nav__cta">Informações</a>
     </nav>
   </header>
 
@@ -62,7 +62,7 @@
         <span class="hero__date-line"></span>
       </div>
 
-      <a href="#rsvp" class="btn btn--ghost">Confirmar Presença</a>
+      <a href="#info" class="btn btn--ghost">Saiba mais</a>
     </div>
 
     <a href="#contagem" class="hero__scroll" aria-label="Rolar para baixo">
@@ -97,9 +97,9 @@
 
     <div class="story__grid">
       <div class="story__text">
-        <!-- TODO Emily: troque o texto abaixo pela história de vocês -->
-        <p class="story__lead">Foi entre encontros, risadas e sonhos compartilhados que descobrimos que a vida é mais bonita quando vivida a dois.</p>
-        <p>De um primeiro olhar a um “sim” para a vida toda — cada capítulo nos trouxe até aqui. Agora queremos ter as pessoas que amamos por perto para celebrar o começo de uma nova história.</p>
+        <p class="story__lead">Deus cruzou os nossos caminhos e, com carinho, usou pessoas queridas para que pudéssemos nos conhecer mais e mais.</p>
+        <p>A chave virou em uma viagem com amigos em <strong>Botucatu</strong>. Foi ali que Deus abriu os olhos dos dois — o que antes era apenas convivência ganhou outro nome, outro propósito. Desde então, cada capítulo da nossa história tem sido um lembrete de que Ele esteve à frente em cada detalhe.</p>
+        <p>Nossa oração hoje é simples: assim como Deus nos abençoou tanto, queremos que Ele também abençoe a vida de outras pessoas. E acima de tudo, nosso propósito é ter Deus no centro de tudo — do nosso casamento e de cada passo que dermos a partir daqui.</p>
         <p class="story__sign">Com amor,<br/><em>Natã &amp; Emily</em></p>
       </div>
 
@@ -214,51 +214,66 @@
     </div>
   </section>
 
-  <!-- ===================== RSVP ===================== -->
-  <section class="rsvp section" id="rsvp">
-    <img class="rsvp__convite" src="images/convite_aberto_com_flores.png" alt="Convite de casamento de Natã e Emily" loading="lazy" />
+  <!-- ===================== INFORMAÇÕES & DÚVIDAS ===================== -->
+  <section class="info section" id="info">
+    <img class="info__convite" src="images/convite_aberto_com_flores.png" alt="Convite de casamento de Natã e Emily" loading="lazy" />
 
     <div class="section__head">
-      <p class="eyebrow">Você é nosso convidado</p>
-      <h2 class="section__title">Confirme sua Presença</h2>
-      <!-- TODO Emily: ajuste a data limite -->
-      <p class="section__sub">Por favor, confirme até <strong>14 de Outubro de 2026</strong>.</p>
+      <p class="eyebrow">Tudo que você precisa saber</p>
+      <h2 class="section__title">Antes do Grande Dia</h2>
+      <p class="section__sub">Algumas dicas e respostas para você chegar tranquilo e aproveitar cada momento com a gente.</p>
     </div>
 
-    <!-- TODO Emily: escolha UMA das duas opções de confirmação abaixo.
-         (1) Formulário por e-mail (Formspree): troque SEU_ID pelo seu ID em https://formspree.io
-         (2) WhatsApp: troque o número no botão e apague o formulário. -->
-    <form class="rsvp__form" id="rsvpForm" action="https://formspree.io/f/SEU_ID" method="POST">
-      <div class="field">
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" required placeholder="Seu nome" />
-      </div>
-      <div class="field">
-        <label for="acompanhantes">Quantas pessoas (incluindo você)?</label>
-        <input type="number" id="acompanhantes" name="acompanhantes" min="1" value="1" required />
-      </div>
-      <div class="field">
-        <label for="presenca">Você vai comparecer?</label>
-        <select id="presenca" name="presenca" required>
-          <option value="Sim, com alegria!">Sim, com alegria!</option>
-          <option value="Infelizmente não poderei">Infelizmente não poderei</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="recado">Deixe um recado para os noivos (opcional)</label>
-        <textarea id="recado" name="recado" rows="3" placeholder="Mande um carinho..."></textarea>
-      </div>
-      <button type="submit" class="btn btn--solid btn--block">Enviar confirmação</button>
-      <p class="rsvp__feedback" id="rsvpFeedback" role="status"></p>
-    </form>
+    <div class="faq">
+      <article class="faq__item">
+        <h3 class="faq__q">Qual roupa devo usar?</h3>
+        <div class="faq__a">
+          <p>Use a roupa que <em>você se achar mais bonita</em> — esse é nosso único pedido. Vista o que te fizer sentir bem.</p>
+          <p>Só uma observação importante: o Sítio São Fernando é uma <strong>chácara</strong> e a nossa cerimônia será em <strong>ambiente aberto</strong>, em meio à natureza. Considere o clima, o piso de grama e a possibilidade de pegar um pouco de sol.</p>
+          <p>E uma dica especial para as mulheres: leve um <strong>chinelinho</strong> na bolsa para quando começar a festa — porque a pista vai pegar fogo e queremos vocês dançando muito com a gente!</p>
+        </div>
+      </article>
 
-    <div class="rsvp__or">
-      <span>ou confirme pelo</span>
-      <!-- TODO Emily: troque pelo número real (formato 55 + DDD + número) -->
-      <a class="btn btn--whats" target="_blank" rel="noopener"
-         href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1!%20Quero%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Nat%C3%A3%20%26%20Emily.">
-        WhatsApp
-      </a>
+      <article class="faq__item">
+        <h3 class="faq__q">Como confirmo minha presença?</h3>
+        <div class="faq__a">
+          <p>A confirmação é feita <strong>diretamente pelo WhatsApp com a nossa cerimonialista</strong>. É muito importante que você siga todas as instruções que ela passar — assim conseguimos garantir a <em>segurança</em> e a <em>organização</em> do dia para todos.</p>
+          <!-- TODO Emily: trocar 55SEUNUMERO pelo número real da cerimonialista (formato 55 + DDD + número) -->
+          <a class="btn btn--solid" target="_blank" rel="noopener"
+             href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1!%20Quero%20confirmar%20minha%20presen%C3%A7a%20no%20casamento%20de%20Nat%C3%A3%20%26%20Emily.">
+            Falar com a cerimonialista
+          </a>
+        </div>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__q">Que horário devo chegar?</h3>
+        <div class="faq__a">
+          <p>A cerimônia começa pontualmente às <strong>16h</strong>. Recomendamos chegar com pelo menos <strong>30 minutos de antecedência</strong> para se acomodar com calma antes de tudo começar.</p>
+        </div>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__q">Posso levar acompanhante?</h3>
+        <div class="faq__a">
+          <p>Por uma questão de organização do espaço, pedimos que combine acompanhantes diretamente com a cerimonialista pelo WhatsApp antes de confirmar.</p>
+        </div>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__q">E se chover?</h3>
+        <div class="faq__a">
+          <!-- TODO Emily: confirme se existe estrutura coberta / plano B para chuva -->
+          <p>Está tudo preparado — o local conta com estrutura para acolher a gente com conforto em qualquer cenário.</p>
+        </div>
+      </article>
+
+      <article class="faq__item">
+        <h3 class="faq__q">Posso tirar fotos durante a cerimônia?</h3>
+        <div class="faq__a">
+          <p>Vamos ter fotógrafos profissionais cuidando de cada detalhe. Nosso pedido é que, durante a cerimônia, vocês deixem os celulares e câmeras de lado e curtam o momento com a gente. Depois, é só festa e fotos à vontade!</p>
+        </div>
+      </article>
     </div>
   </section>
 

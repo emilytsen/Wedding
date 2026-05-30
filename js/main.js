@@ -66,7 +66,7 @@
   var revealEls = document.querySelectorAll(
     '.section__head, .story__text, .story__photos, .timeline__item, .dresscode, ' +
     '.venue__photo, .venue__info, .venue__map, .gift-card, ' +
-    '.moment__quote, .rsvp__convite, .rsvp__form, .rsvp__or, .countdown__inner'
+    '.moment__quote, .info__convite, .faq__item, .countdown__inner'
   );
   revealEls.forEach(function (el) { el.classList.add('reveal'); });
 
