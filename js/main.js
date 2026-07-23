@@ -66,7 +66,7 @@
   var revealEls = document.querySelectorAll(
     '.section__head, .story__text, .story__photos, .timeline__item, .dresscode, ' +
     '.venue__photo, .venue__info, .venue__map, .gift-card, ' +
-    '.moment__quote, .info__convite, .faq__item, .countdown__inner'
+    '.moment__quote, .convite-show img, .faq__item, .countdown__inner'
   );
   revealEls.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -82,6 +82,22 @@
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---------- FLORES entram deslizando no scroll ---------- */
+  var flowers = document.querySelectorAll('.flower');
+  if ('IntersectionObserver' in window) {
+    var flowerIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          flowerIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    flowers.forEach(function (el) { flowerIO.observe(el); });
+  } else {
+    flowers.forEach(function (el) { el.classList.add('in'); });
   }
 
   /* ---------- COPIAR CHAVE PIX ---------- */

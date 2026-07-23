@@ -9,23 +9,22 @@
   <!-- Open Graph (preview ao compartilhar no WhatsApp / redes) -->
   <meta property="og:title" content="Natã & Emily · 14.11.2026" />
   <meta property="og:description" content="Celebre conosco este grande momento. Confirme sua presença!" />
-  <meta property="og:image" content="images/web/correndo2.jpg" />
+  <meta property="og:image" content="images/web/abracando.jpg" />
   <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/png" href="images/logo_cera_dourado.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=20260723w" />
 </head>
 <body>
 
   <!-- ===================== NAV ===================== -->
   <header class="nav" id="nav">
     <a href="#inicio" class="nav__brand" aria-label="Início">
-      <img class="nav__seal" src="images/logo_cera_dourado.png" alt="" />
       <span>Natã <em>&amp;</em> Emily</span>
     </a>
     <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
@@ -40,43 +39,30 @@
     </nav>
   </header>
 
-  <!-- ===================== HERO (foto full-bleed) ===================== -->
+  <!-- ===================== HERO ===================== -->
   <section class="hero" id="inicio">
-    <picture class="hero__bg">
-      <img src="images/web/correndo2.jpg" alt="Natã e Emily correndo pelo campo sob um céu aberto" />
-    </picture>
+    <img class="hero__img" src="images/web/abracando.jpg" alt="Natã e Emily abraçados" />
     <div class="hero__overlay"></div>
 
-    <div class="hero__inner">
+    <div class="hero__text">
       <img class="hero__seal" src="images/logo_cera_dourado.png" alt="" />
-      <p class="hero__eyebrow">Vão se casar</p>
+      <p class="hero__eyebrow">Vão se casar · 14.11.26</p>
       <h1 class="hero__names">Natã <span>&amp;</span> Emily</h1>
-      <p class="hero__script">para todo sempre</p>
-
-      <div class="hero__date">
-        <span class="hero__date-line"></span>
-        <div>
-          <p class="hero__day">14 . 11 . 2026</p>
-          <p class="hero__place">Sítio São Fernando · Vera Cruz, SP</p>
-        </div>
-        <span class="hero__date-line"></span>
-      </div>
-
-      <a href="#info" class="btn btn--ghost">Saiba mais</a>
+      <p class="hero__script">para todo o sempre</p>
     </div>
 
-    <a href="#contagem" class="hero__scroll" aria-label="Rolar para baixo">
-      <span></span>
-    </a>
+    <div class="hero__bar">
+      <span class="hero__bar-title">Sítio São Fernando</span>
+      <span class="hero__bar-sub">Vera Cruz · SP</span>
+    </div>
   </section>
 
-  <!-- ===================== CONTAGEM REGRESSIVA ===================== -->
+  <!-- ===================== CONTAGEM REGRESSIVA — fundo vinho ===================== -->
   <section class="countdown" id="contagem">
-    <img class="countdown__flower countdown__flower--l" src="images/heliconia_2_muda.png" alt="" aria-hidden="true" />
-    <img class="countdown__flower countdown__flower--r" src="images/red_ginger_flor.png" alt="" aria-hidden="true" />
+    <img class="flower countdown__flower countdown__flower--r from-right" style="--r:8deg;--o:.6" src="images/flor_heliconia_par.png" alt="" aria-hidden="true" />
     <div class="countdown__inner">
-      <p class="eyebrow eyebrow--light">Contagem regressiva</p>
-      <h2 class="countdown__title">Faltam...</h2>
+      <p class="eyebrow eyebrow--light">Faltam</p>
+      <h2 class="countdown__title">Contagem regressiva para o grande dia</h2>
       <div class="countdown__grid" id="countdown" data-target="2026-11-14T16:00:00-03:00">
         <div class="countdown__cell"><span class="countdown__num" data-dias>--</span><span class="countdown__label">Dias</span></div>
         <div class="countdown__cell"><span class="countdown__num" data-horas>--</span><span class="countdown__label">Horas</span></div>
@@ -87,9 +73,13 @@
     </div>
   </section>
 
-  <!-- ===================== NOSSA HISTÓRIA ===================== -->
+  <!-- ===================== CONVITE (showcase) ===================== -->
+  <section class="convite-show" aria-label="Nosso convite">
+    <img src="images/convite_aberto_com_flores.png" alt="Convite de casamento de Natã e Emily" loading="lazy" />
+  </section>
+
+  <!-- ===================== NOSSA HISTÓRIA — creme ===================== -->
   <section class="story section" id="historia">
-    <img class="story__flower" src="images/copo_de_leite_dupla.png" alt="" aria-hidden="true" />
     <div class="section__head">
       <p class="eyebrow">Como tudo começou</p>
       <h2 class="section__title">Nossa História</h2>
@@ -114,10 +104,9 @@
     </div>
   </section>
 
-  <!-- ===================== O GRANDE DIA (CRONOGRAMA) — fundo vinho ===================== -->
-  <section class="bigday section--alt" id="grande-dia">
-    <img class="bigday__flower bigday__flower--l" src="images/flor_heliconia_par.png" alt="" aria-hidden="true" />
-    <img class="bigday__flower bigday__flower--r" src="images/antulio_verde.png" alt="" aria-hidden="true" />
+  <!-- ===================== O GRANDE DIA (CRONOGRAMA) — fundo oliva ===================== -->
+  <section class="bigday section--olive" id="grande-dia">
+    <img class="flower bigday__flower from-right" style="--r:0deg;--o:.34" src="images/red_ginger_flor.png" alt="" aria-hidden="true" />
     <div class="section">
       <div class="section__head">
         <p class="eyebrow eyebrow--light">Programação</p>
@@ -125,19 +114,17 @@
         <p class="section__sub section__sub--light">14 de Novembro de 2026 · Sítio São Fernando</p>
       </div>
 
-      <!-- TODO Emily: ajuste os horários e itens conforme a programação real -->
       <ol class="timeline">
         <li class="timeline__item"><span class="timeline__time">16:00</span><span class="timeline__dot"></span><div><h3>Cerimônia</h3><p>O momento mais esperado. Chegue com antecedência.</p></div></li>
-        <li class="timeline__item"><span class="timeline__time">17:00</span><span class="timeline__dot"></span><div><h3>Sessão de fotos</h3><p>Registros com a família e os padrinhos.</p></div></li>
-        <li class="timeline__item"><span class="timeline__time">17:30</span><span class="timeline__dot"></span><div><h3>Coquetel</h3><p>Drinks e boas-vindas aos convidados.</p></div></li>
-        <li class="timeline__item"><span class="timeline__time">19:00</span><span class="timeline__dot"></span><div><h3>Jantar &amp; Recepção</h3><p>Brindes, discursos e muita emoção.</p></div></li>
-        <li class="timeline__item"><span class="timeline__time">21:00</span><span class="timeline__dot"></span><div><h3>Festa</h3><p>Pista liberada — venha dançar com a gente!</p></div></li>
+        <li class="timeline__item"><span class="timeline__time">17:30</span><span class="timeline__dot"></span><div><h3>Entradas &amp; Coquetel</h3><p>Drinks, petiscos e boas-vindas aos convidados.</p></div></li>
+        <li class="timeline__item"><span class="timeline__time">19:00</span><span class="timeline__dot"></span><div><h3>Jantar &amp; Recepção</h3><p>Brindes, diversão e muito papo para botar em dia.</p></div></li>
+        <li class="timeline__item"><span class="timeline__time">20:00</span><span class="timeline__dot"></span><div><h3>Festa</h3><p>Pista liberada — venha dançar com a gente!</p></div></li>
       </ol>
 
       <div class="dresscode">
         <p class="eyebrow eyebrow--light">Traje</p>
         <!-- TODO Emily: ajuste o traje sugerido -->
-        <p class="dresscode__text">Esporte fino · clima tropical ao ar livre</p>
+        <p class="dresscode__pill">Esporte fino · clima tropical ao ar livre</p>
       </div>
     </div>
   </section>
@@ -149,7 +136,7 @@
     <p class="moment__quote">&amp; foi pra sempre</p>
   </section>
 
-  <!-- ===================== LOCAL ===================== -->
+  <!-- ===================== LOCAL — creme ===================== -->
   <section class="venue section" id="local">
     <div class="section__head">
       <p class="eyebrow">Onde vai ser</p>
@@ -166,7 +153,7 @@
         <p>Um cenário ao ar livre, cercado pela natureza — perfeito para o nosso dia. Recomendamos chegar com antecedência para aproveitar cada momento.</p>
         <a class="btn btn--outline" id="mapsLink" target="_blank" rel="noopener"
            href="https://www.google.com/maps/search/?api=1&query=S%C3%ADtio+S%C3%A3o+Fernando+Vera+Cruz+SP+17560-000">
-           Como chegar
+           Como chegar →
         </a>
       </div>
     </div>
@@ -179,9 +166,9 @@
     </div>
   </section>
 
-  <!-- ===================== PRESENTES — fundo oliva ===================== -->
-  <section class="gifts section--olive" id="presentes">
-    <img class="gifts__flower gifts__flower--l" src="images/copo_de_leite_dupla.png" alt="" aria-hidden="true" />
+  <!-- ===================== PRESENTES — fundo terracota ===================== -->
+  <section class="gifts section--terra" id="presentes">
+    <img class="flower gifts__flower gifts__flower--front from-right" style="--r:-8deg;--o:.9" src="images/flor_laranja_diferente.png" alt="" aria-hidden="true" />
     <div class="section">
       <div class="section__head">
         <p class="eyebrow eyebrow--light">Com carinho</p>
@@ -193,34 +180,35 @@
         <!-- CARTÃO PIX -->
         <div class="gift-card">
           <h3>Pix</h3>
-          <p>A forma mais simples de presentear. Use a chave abaixo:</p>
-          <!-- TODO Emily: troque pela chave PIX real -->
+          <p>Escaneie o QR Code na área de pagamento do seu banco para efetuar o pagamento, ou copie a chave Pix abaixo.</p>
+          <img class="gift-card__qr" src="images/pix_qr.png" alt="QR Code Pix de Natã e Emily" loading="lazy" />
           <div class="gift-card__pix">
-            <code id="pixKey">CHAVE-PIX-AQUI</code>
+            <code id="pixKey">55a38ebb-94ed-482a-9050-af442d7c9c7a</code>
             <button class="gift-card__copy" id="copyPix" type="button">Copiar</button>
           </div>
-          <p class="gift-card__hint" id="pixFeedback">Toque em “Copiar” e cole no app do seu banco.</p>
+          <p class="gift-card__hint" id="pixFeedback"></p>
+          <p class="gift-card__holder">Titular: <strong>Emily Gabriela Tsen</strong><br/>CPF ***.373.848-*** · Nu Pagamentos - IP</p>
+          <p class="gift-card__note">Pelo Pix, o presente chega direto pra gente, <strong>sem nenhuma taxa</strong>.</p>
+          <p class="gift-card__warn">Confira sempre os dados do recebedor antes de concluir qualquer transferência.</p>
         </div>
 
         <!-- CARTÃO LISTA -->
         <div class="gift-card">
           <h3>Lista de presentes</h3>
-          <p>Selecionamos algumas ideias com muito carinho para o nosso novo lar.</p>
-          <!-- TODO Emily: troque pelo link da lista (Amazon, Magazine, etc.) -->
-          <a class="btn btn--solid" href="#" target="_blank" rel="noopener">Ver lista de presentes</a>
-          <p class="gift-card__hint">Link da lista a definir.</p>
+          <p>Cada contribuição vai nos ajudar com os utensílios e o nosso novo lar.</p>
+          <p class="gift-card__note">Aqui dá pra <strong>parcelar o pagamento</strong>. A plataforma cobra uma pequena taxa de serviço pelo site.</p>
+          <p class="gift-card__warn">No site não é necessário enviar o cartão postal — no casamento teremos um espaço dedicado para os recados.</p>
+          <a class="btn btn--solid" href="https://noivos.casar.com/emily-e-nata-2026" target="_blank" rel="noopener">Ver lista de presentes</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== INFORMAÇÕES & DÚVIDAS ===================== -->
+  <!-- ===================== INFORMAÇÕES & DÚVIDAS — creme ===================== -->
   <section class="info section" id="info">
-    <img class="info__convite" src="images/convite_aberto_com_flores.png" alt="Convite de casamento de Natã e Emily" loading="lazy" />
-
     <div class="section__head">
       <p class="eyebrow">Tudo que você precisa saber</p>
-      <h2 class="section__title">Antes do Grande Dia</h2>
+      <h2 class="section__title">Antes do Dia</h2>
       <p class="section__sub">Algumas dicas e respostas para você chegar tranquilo e aproveitar cada momento com a gente.</p>
     </div>
 
@@ -281,9 +269,7 @@
   <footer class="footer">
     <img class="footer__seal" src="images/logo_cera_dourado.png" alt="" />
     <h2 class="footer__names">Natã <span>&amp;</span> Emily</h2>
-    <p class="footer__date">14 . 11 . 2026</p>
-    <!-- TODO Emily: ajuste a hashtag se quiser -->
-    <p class="footer__hash">#NataEEmily2026</p>
+    <p class="footer__date">14.11.2026</p>
     <p class="footer__credit">feito com amor para o nosso grande dia</p>
   </footer>
 
